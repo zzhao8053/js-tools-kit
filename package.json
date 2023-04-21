@@ -1,6 +1,8 @@
 {
+  "private": false,
   "name": "@zzhao/js-tools",
   "version": "0.0.1",
+  "description": "Js 常用工具包",
   "author": {
     "name": "Frank",
     "email": "1056616012@qq.com"
