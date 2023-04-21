@@ -1,6 +1,6 @@
-import { env } from '../dist'
+import { getRuntimeEnv } from '../dist'
 
 test('env', () => {
-  const currentEnv = env.getRuntimeEnv()
+  const currentEnv = getRuntimeEnv()
   expect(currentEnv.node).toBe(true)
 })
