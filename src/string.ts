@@ -34,3 +34,9 @@ export function camelize(str: string) {
     return x.toUpperCase()
   })
 }
+
+export function camelizeWithObject(obj: any) {}
+
+export function camelizeWithArray(arr: any) {}
+
+export function camelizeWithString(str: any) {}
