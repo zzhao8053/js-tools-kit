@@ -28,8 +28,7 @@
     "clear": "rimraf dist",
     "test": "jest test/",
     "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
-    "prebuild": "rimraf dist",
-    "publish": "npm run build && npm run test && npm publish"
+    "prebuild": "rimraf dist"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
