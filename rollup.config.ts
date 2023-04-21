@@ -4,16 +4,13 @@ import typescript from '@rollup/plugin-typescript'
 
 const pkg = require('./package.json')
 
-const libraryName = 'javascript-utils'
+const libraryName = 'js-tools-kit'
 
 export default {
   input: `src/index.ts`,
-  output: [
-    { file: pkg.main, name: libraryName, format: 'umd' },
-    { file: pkg.module, format: 'es' }
-  ],
+  output: [{ file: pkg.main, format: 'es' }],
   watch: {
-    include: 'src/**'
+    include: 'src/**',
   },
   plugins: [
     // Compile TypeScript files
@@ -23,6 +20,6 @@ export default {
     // Allow node_modules resolution, so you can use 'external' to control
     // which external modules to include in the bundle
     // https://github.com/rollup/rollup-plugin-node-resolve#usage
-    resolve()
-  ]
+    resolve(),
+  ],
 }
