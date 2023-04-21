@@ -1,6 +1,6 @@
 {
-  "name": "@gogoing/javascript-utils",
-  "version": "0.0.4",
+  "name": "@zzhao/js-tools",
+  "version": "0.0.1",
   "author": {
     "name": "Frank",
     "email": "1056616012@qq.com"
@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gavinkd/javascript-utils.git"
+    "url": "https://github.com/zzhao8053/js-tools.git"
   },
   "engines": {
     "node": ">=6.0.0"
