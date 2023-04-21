@@ -1,4 +1,4 @@
-import { urlSearchParam, parseUrlParams, stringify, parse } from '../dist'
+import { urlSearchParam, parseUrlParams, stringify, parse } from '../src'
 
 const url = 'https://www.baidu.com?q=1&topic=api'
 const subUrl = 'q=searchParams&topic=api'

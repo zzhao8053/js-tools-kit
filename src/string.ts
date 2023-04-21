@@ -1,5 +1,5 @@
 /**
- * 手机号码格式化
+ * 字符串格式化
  * @example telephoneFormat(13222220909) => 132****0909
  * @param value 手机号
  * @param start 起始位置，默认下标为3
@@ -7,7 +7,7 @@
  * @param padding 填充物，默认为*
  * @returns {string}
  */
-export function telephoneFormat(value: string, start: number = 3, slide: number = 4, padding: string = '*'): string {
+export function stringFormat(value: string, start: number = 3, slide: number = 4, padding: string = '*'): string {
   const startReg = '(\\d{' + start + '})'
   const paddingContent = new Array(slide > value.length ? value.length - start : slide).fill(padding).join('')
   let reg = ''
@@ -34,9 +34,3 @@ export function camelize(str: string) {
     return x.toUpperCase()
   })
 }
-
-export function camelizeWithObject(obj: any) {}
-
-export function camelizeWithArray(arr: any) {}
-
-export function camelizeWithString(str: any) {}

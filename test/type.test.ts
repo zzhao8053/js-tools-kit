@@ -1,4 +1,4 @@
-import { isStatic, isNull, isOriginalType, isPlainObject, isArray, isRegExp, isDate, isFunction, isEmpty } from '../dist'
+import { isStatic, isNull, isOriginalType, isPlainObject, isArray, isRegExp, isDate, isFunction, isEmpty } from '../src'
 
 describe('typeUtils Test', () => {
   it('isStatic function', () => {

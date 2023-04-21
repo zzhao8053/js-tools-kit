@@ -1,4 +1,4 @@
-import { isInteger } from '../dist'
+import { isInteger } from '../src'
 
 describe('number test', () => {
   it('isInteger function', () => {

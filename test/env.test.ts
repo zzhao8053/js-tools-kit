@@ -1,6 +1,8 @@
-import { getRuntimeEnv } from '../dist'
+import { getRuntimeEnv } from '../src'
 
-test('env', () => {
-  const currentEnv = getRuntimeEnv()
-  expect(currentEnv.node).toBe(true)
+describe('env', function () {
+  it('should be able to set env', function () {
+    const currentEnv = getRuntimeEnv()
+    expect(currentEnv.node).toBe(true)
+  })
 })

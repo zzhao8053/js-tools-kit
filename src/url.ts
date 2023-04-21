@@ -1,6 +1,3 @@
-import { URLSearchParams } from 'url'
-import { getRuntimeEnv } from './env'
-
 function urlReplace(url: string): string {
   return url.indexOf('?') > -1 ? url.split('?')[1] : url
 }
@@ -39,17 +36,12 @@ export function parseUrlParams(url: string = location?.search): { [key: string]:
  * @param {*} isPrefix
  */
 export function stringify(data: any, isPrefix?: boolean) {
-  const env = getRuntimeEnv()
   let prefix = isPrefix ? '?' : ''
-  if (env.node) {
-    const searchParams = new global.URLSearchParams(data)
+  if (URLSearchParams) {
+    const searchParams = new URLSearchParams(data)
     return prefix + searchParams.toString()
   }
 
-  if (env.window && window?.URLSearchParams) {
-    const searchParams = new window.URLSearchParams(data)
-    return prefix + searchParams.toString()
-  }
   let _result = []
   for (let key in data) {
     let value = data[key]
