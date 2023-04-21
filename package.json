@@ -27,7 +27,8 @@
     "clear": "rimraf dist",
     "test": "jest test/",
     "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
-    "prebuild": "rimraf dist"
+    "prebuild": "rimraf dist",
+    "publish": "npm run build && npm run test && npm publish"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^4.27.0",
